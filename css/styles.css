@@ -300,6 +300,11 @@ img {
   padding: 32px 0;
 }
 
+.section-portfolio {
+  background: #ffffff;
+  padding: 120px 0 120px 0;
+}
+
 .portfolio {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -311,11 +316,6 @@ img {
   padding-top: 120px;
   margin-top: 120px;
   margin-bottom: 72px;
-}
-
-.sectin-portfolio {
-  background: #ffffff;
-  padding: 120px 0 120px 0;
 }
 
 .portfolio-list {
