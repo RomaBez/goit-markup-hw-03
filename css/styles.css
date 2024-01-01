@@ -134,7 +134,7 @@ img {
   height: 600px;
   flex-shrink: 0;
   background: #2e2f42;
-  padding: 188px 472px;
+  padding: 188px 0;
   display: block;
 }
 
@@ -150,6 +150,7 @@ img {
 }
 
 .main-btn {
+  display: block;
   color: var(--WHITE, #fff);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -183,6 +184,19 @@ img {
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-list {
@@ -219,7 +233,7 @@ img {
   height: 732px;
   flex-shrink: 0;
   background: var(--CLOUD, #f4f4fd);
-  padding: 0 156px;
+  padding: 120px 0;
 }
 
 .title {
@@ -230,7 +244,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .title-list {
@@ -241,9 +255,15 @@ img {
 
 .title-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.titie-photo {
+.title-photo {
   display: block;
   min-width: 100%;
   height: auto;
@@ -257,7 +277,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .title-name-discription {
@@ -317,6 +337,7 @@ img {
 }
 
 .footer {
+  padding: 100px 0;
 }
 
 .footer-container {
@@ -337,6 +358,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-blue {
