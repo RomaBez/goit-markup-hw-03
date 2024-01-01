@@ -135,6 +135,7 @@ img {
   flex-shrink: 0;
   background: #2e2f42;
   padding: 188px 472px;
+  display: block;
 }
 
 .main-start {
@@ -163,6 +164,8 @@ img {
   padding: 16px 32px;
   margin-top: 48px;
   margin-bottom: 188px;
+  margin: 0 auto;
+  min-width: 169px;
 }
 
 .main-btn:hover {
