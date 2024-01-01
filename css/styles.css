@@ -4,15 +4,61 @@ body {
   background-color: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
   text-decoration: none;
+  color: currentColor;
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
+  background: #fff;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-logo-blue {
@@ -33,6 +79,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-item-link {
@@ -41,6 +88,8 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 
 .header-item-link:focus {
@@ -53,6 +102,12 @@ ul {
 
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-item-contact {
@@ -71,6 +126,17 @@ ul {
   color: #404bbf;
 }
 
+.main-section {
+}
+
+.hero-container {
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+  background: #2e2f42;
+  padding: 188px 472px;
+}
+
 .main-start {
   color: var(--WHITE, #fff);
   text-align: center;
@@ -78,10 +144,8 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-}
-
-.main-section {
-  background: var(--NAVY-BLUE, #2e2f42);
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .main-btn {
@@ -91,8 +155,14 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  padding: 16px 32px;
+  margin-top: 48px;
+  margin-bottom: 188px;
 }
 
 .main-btn:hover {
@@ -105,6 +175,16 @@ ul {
 
 .main-btn:active {
   color: #404bbf;
+}
+
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
 }
 
 .features-items-list {
@@ -124,6 +204,19 @@ ul {
 
 .sectin-ourteam {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.team-container {
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
+  background: var(--CLOUD, #f4f4fd);
+  padding: 0 156px;
 }
 
 .title {
@@ -134,10 +227,23 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
+}
+
+.title-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 120px;
 }
 
 .title-item {
   background-color: #ffffff;
+}
+
+.titie-photo {
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 .title-name {
@@ -147,6 +253,8 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .title-name-discription {
@@ -155,6 +263,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 .sectin-portfolio {
@@ -169,6 +278,17 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
+  padding-top: 120px;
+  margin-top: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  width: calc((100% - 24 * 2) / 3);
+  margin-bottom: 120px;
 }
 
 .portfolio-item {
@@ -177,6 +297,13 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.portfolio-img {
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
 }
 
 .portfolio-item-discrpt {
@@ -187,7 +314,16 @@ ul {
 }
 
 .footer {
+}
+
+.footer-container {
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
+  padding-top: 100px;
+  padding-left: 156px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -215,4 +351,6 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 16px;
+  width: 264px;
 }
